@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>socket.io</title>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+  socket = new io.Socket(null, {port: 3000});
+  socket.connect();
+  socket.on('connect', function() {
+     console.log('connect');
+  });
+</script>
+</head>
+<body>
+  <p>try connection</p>
+</body>
+</html>
